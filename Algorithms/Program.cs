@@ -180,17 +180,26 @@ int[] newArry = { 45, 67, 234, 423, 122, 43, 21, 121 };
 // 4)Massivdə 100dən boyük 200dən kiçik ədədlərin  sayını tapan funksiya düzəldin.
 
 
+//for (int i = 0; i < newArry.Length; i++)
+//{
+//    if (newArry[i] > 100 && newArry[i] < 200)
+//    {
+//        Console.WriteLine(newArry[i]);
+//    }
+//}
+
+
+
+// 5)Massivdəki cüt ədədləri tapan funksiya düzəldin
+
+
 for (int i = 0; i < newArry.Length; i++)
 {
-    if (newArry[i] > 100 && newArry[i] < 200)
+    if (newArry[i] % 2 == 0)
     {
         Console.WriteLine(newArry[i]);
     }
 }
-
-
-
-
 
 
 
