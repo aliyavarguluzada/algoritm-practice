@@ -117,32 +117,95 @@ Misal: İstifadəçi 50 və 75 daxil edərsə 3cü tərəf 55ə bərabər olacaq
 //•ədədin faizini və faizinə görə ədədi tapan funksiya düzəldin.
 
 //
-Console.WriteLine("enter operation number 1 or 2");
 
-int operation = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("enter operation number 1 or 2");
+
+//int operation = Convert.ToInt32(Console.ReadLine());
 
 
 
-if (operation == 1)
+//if (operation == 1)
 
+//{
+//    Console.WriteLine("Faizini tapmaq istediyin ededi daxil et");
+//    int Number = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("Faizi daxil et");
+//    int perc = Convert.ToInt32(Console.ReadLine());
+//    int percentNumber = Number * perc / 100;
+//    Console.WriteLine(percentNumber);
+
+//}
+//else if (operation == 2)
+//{
+//    Console.WriteLine("Faizi daxil et");
+//    int percent = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("Faiz op alinan ededi daxil et");
+//    int byNumber = Convert.ToInt32(Console.ReadLine());
+
+//    int byPerc = byNumber * 100 / percent;
+//    Console.WriteLine(byPerc);
+//}
+
+
+//•45,67,234,423,122,43,21,121  rəqəmlərindən ibarət massiv verilmişdir. Bu və bənzəri ədəd massivləri üçün.
+// 1) Bütün ədədlərin cəmini tapan funksiya düzəldin.
+
+int[] newArry = { 45, 67, 234, 423, 122, 43, 21, 121 };
+
+
+//int result = 0;
+//for (int i = 0; i < newArry.Length; i++)
+//{
+//    result += newArry[i];
+//}
+//Console.WriteLine(result);
+
+// 2)Ədədlərin ədədi ortasını tapan funksiya düzəldin		
+
+//int average = result / newArry.Length;
+
+//Console.WriteLine(average);
+
+// 3)Massivdəki ədədlərin sayını tapan funksiya düzəldin
+
+
+//for (int i = 0; i < newArry.Length; i++)
+//{
+//    Console.WriteLine(i);
+//}
+
+// ?????????????????????????????
+
+
+// 4)Massivdə 100dən boyük 200dən kiçik ədədlərin  sayını tapan funksiya düzəldin.
+
+
+for (int i = 0; i < newArry.Length; i++)
 {
-    Console.WriteLine("Faizini tapmaq istediyin ededi daxil et");
-    int Number = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Faizi daxil et");
-    int perc = Convert.ToInt32(Console.ReadLine());
-    int percentNumber = Number * perc / 100;
-    Console.WriteLine(percentNumber);
-
+    if (newArry[i] > 100 && newArry[i] < 200)
+    {
+        Console.WriteLine(newArry[i]);
+    }
 }
-else if (operation == 2)
-{
-    Console.WriteLine("Faizi daxil et");
-    int percent = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("eded daxil et");
-    int byNumber = Convert.ToInt32(Console.ReadLine());
 
-    int byPerc = byNumber * 100 / percent;
-    Console.WriteLine(byPerc);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
