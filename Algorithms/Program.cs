@@ -9,9 +9,9 @@ using System.Reflection.Metadata.Ecma335;
 //bool cubeCase = int.TryParse(cubeNumber, out cubeNum);
 
 
-//for (int i = 0; i < 2; i++)
+//for (int i = 0; i < 3; i++)
 //{
-//    int opCube = cubeNum *= cubeNum;
+//    int opCube = cubeNum * cubeNum * cubeNum;
 //    Console.WriteLine(opCube);
 //}
 
@@ -42,31 +42,31 @@ Misal: İstifadəçi 50 və 75 daxil edərsə 3cü tərəf 55ə bərabər olacaq
 
 
 
-//Console.WriteLine("Enter the first angle");
-//string angle1 = Console.ReadLine();
-//int angle_1;
-//bool case1 = int.TryParse(angle1, out angle_1);
+Console.WriteLine("Enter the first angle");
+string angle1 = Console.ReadLine();
+int angle_1;
+bool case1 = int.TryParse(angle1, out angle_1);
 
 
-//Console.WriteLine("Enter the second angle");
+Console.WriteLine("Enter the second angle");
 
-//string angle2 = Console.ReadLine();
-//int angle_2;
-//bool case2 = int.TryParse(angle2, out angle_2);
+string angle2 = Console.ReadLine();
+int angle_2;
+bool case2 = int.TryParse(angle2, out angle_2);
 
-//int triangle = angle_1 + angle_2;
+int triangle = angle_1 + angle_2;
 
-//int angle_3 = 180 - (angle_1 + angle_2);
+int angle_3 = 180 - (angle_1 + angle_2);
 
-//if (triangle > 180)
-//{
-//    Console.WriteLine("the sum of a triangle cannot exceed 180 degrees");
-//    return;
-//}
-//else
-//{
-//    Console.WriteLine("The 3rd angle is " + angle_3);
-//}
+if (triangle > 180)
+{
+    Console.WriteLine("the sum of the angles of a triangle cannot exceed 180 degrees");
+    return;
+}
+else
+{
+    Console.WriteLine("The 3rd angle is " + angle_3);
+}
 
 
 /*
@@ -150,7 +150,7 @@ Misal: İstifadəçi 50 və 75 daxil edərsə 3cü tərəf 55ə bərabər olacaq
 //•45,67,234,423,122,43,21,121  rəqəmlərindən ibarət massiv verilmişdir. Bu və bənzəri ədəd massivləri üçün.
 // 1) Bütün ədədlərin cəmini tapan funksiya düzəldin.
 
-int[] newArry = { 45, 67, 234, 423, 122, 43, 21, 121 };
+//int[] newArry = { 45, 67, 234, 423, 122, 43, 21, 121 };
 
 
 //int result = 0;
@@ -193,15 +193,29 @@ int[] newArry = { 45, 67, 234, 423, 122, 43, 21, 121 };
 // 5)Massivdəki cüt ədədləri tapan funksiya düzəldin
 
 
-for (int i = 0; i < newArry.Length; i++)
-{
-    if (newArry[i] % 2 == 0)
-    {
-        Console.WriteLine(newArry[i]);
-    }
-}
+//for (int i = 0; i < newArry.Length; i++)
+//{
+//    if (newArry[i] % 2 == 0)
+//    {
+//        Console.WriteLine(newArry[i]);
+//    }
+//}
 
 
+
+// 6) Massivdəki ən böyük ədədi tapan funksiya düzəldin
+
+
+//int min = 0;
+//for (int i = 0; i < newArry.Length; i++)
+//{
+//    if (newArry[i] < min)
+//    {
+//        min = newArry[i];
+//    }
+//}
+
+//Console.WriteLine(min);
 
 
 
