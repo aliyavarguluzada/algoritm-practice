@@ -1,19 +1,11 @@
 ﻿//Task •Ədədin kubunu göstərən proqram yazın.
 
-using System.Reflection.Metadata.Ecma335;
 
-//string cubeNumber = Console.ReadLine();
-
-//int cubeNum;
-
-//bool cubeCase = int.TryParse(cubeNumber, out cubeNum);
+//int cubeNumber = Convert.ToInt32(Console.ReadLine());
 
 
-//for (int i = 0; i < 3; i++)
-//{
-//    int opCube = cubeNum * cubeNum * cubeNum;
-//    Console.WriteLine(opCube);
-//}
+//int result = cubeNumber ** 3;
+//Console.WriteLine(result);
 
 
 //•Düzbucaqlı fiqurumuz var. İstifadəçidən düzbucaqlının eni və uzunluğunu alaraq onun perimetr və sahəsini hesablayan proqram yazın
@@ -42,31 +34,31 @@ Misal: İstifadəçi 50 və 75 daxil edərsə 3cü tərəf 55ə bərabər olacaq
 
 
 
-Console.WriteLine("Enter the first angle");
-string angle1 = Console.ReadLine();
-int angle_1;
-bool case1 = int.TryParse(angle1, out angle_1);
+//Console.WriteLine("Enter the first angle");
+//string angle1 = Console.ReadLine();
+//int angle_1;
+//bool case1 = int.TryParse(angle1, out angle_1);
 
 
-Console.WriteLine("Enter the second angle");
+//Console.WriteLine("Enter the second angle");
 
-string angle2 = Console.ReadLine();
-int angle_2;
-bool case2 = int.TryParse(angle2, out angle_2);
+//string angle2 = Console.ReadLine();
+//int angle_2;
+//bool case2 = int.TryParse(angle2, out angle_2);
 
-int triangle = angle_1 + angle_2;
+//int triangle = angle_1 + angle_2;
 
-int angle_3 = 180 - (angle_1 + angle_2);
+//int angle_3 = 180 - (angle_1 + angle_2);
 
-if (triangle > 180)
-{
-    Console.WriteLine("the sum of the angles of a triangle cannot exceed 180 degrees");
-    return;
-}
-else
-{
-    Console.WriteLine("The 3rd angle is " + angle_3);
-}
+//if (triangle > 180)
+//{
+//    Console.WriteLine("the sum of the angles of a triangle cannot exceed 180 degrees");
+//    return;
+//}
+//else
+//{
+//    Console.WriteLine("The 3rd angle is " + angle_3);
+//}
 
 
 /*
@@ -76,30 +68,27 @@ else
  */
 
 
-//int[] arrA = { 45, 67, 89, 23, 55, 88, 93 };
+int[] arrA = { 45, 67, 89, 23, 55, 88, 93 };
 
 
-//int number = Convert.ToInt32(Console.ReadLine());
-
-
-//for (int i = 0; i < arrA.Length; i++)
-//{
-
-//    if (number == arrA[i])
-//    {
-//        Console.WriteLine(number + " is in the array");
-//        break;
-//    }
-//    else
-//    {
-//        Console.WriteLine(number + " is not in the array");
-//        //return;
-//        //break;
-//    }
-
-//}
-
-
+int number = Convert.ToInt32(Console.ReadLine());
+bool a = false;
+for (int i = 0; i < arrA.Length; i++)
+{
+   if(number == arrA[i])
+    {
+        a = true;
+        break;
+    }
+}
+if(a == false)
+{
+    Console.WriteLine("Yoxdur");
+}
+else if(a == true)
+{
+    Console.WriteLine("Var");
+}
 
 
 
@@ -168,13 +157,13 @@ else
 
 // 3)Massivdəki ədədlərin sayını tapan funksiya düzəldin
 
-
+//int count = 0;
 //for (int i = 0; i < newArry.Length; i++)
 //{
-//    Console.WriteLine(i);
+//    count += 1;
 //}
+//Console.WriteLine(count);   
 
-// ?????????????????????????????
 
 
 // 4)Massivdə 100dən boyük 200dən kiçik ədədlərin  sayını tapan funksiya düzəldin.
@@ -206,10 +195,10 @@ else
 // 6) Massivdəki ən böyük ədədi tapan funksiya düzəldin
 
 
-//int min = 0;
+//int min = newArry[1];
 //for (int i = 0; i < newArry.Length; i++)
 //{
-//    if (newArry[i] < min)
+//    if (newArry[i] > min)
 //    {
 //        min = newArry[i];
 //    }
